@@ -1,0 +1,31 @@
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  
+  .card p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .card a {
+    display: block;
+    margin-top: 16px;
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

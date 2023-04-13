@@ -4,7 +4,7 @@ import img1 from './Photo/img1.jpg'
 import img2 from './Photo/img2.jpg'
 import img3 from './Photo/img3.jpg'
 import img4 from './Photo/img4.jpg'
-const list = {
+const MovieList = {
     cardData:[
 {
     id:1,
@@ -13,6 +13,7 @@ const list = {
     description:'Drama',
     postUrl:'',
     desc:'7.5',
+   
   
 }
 ,
@@ -41,10 +42,11 @@ const list = {
     description:'Action',
     postUrl:'',
     desc:'8.5'
-}
+},
+
 ]
     
 
 }
 
-export default list;
+export default MovieList;

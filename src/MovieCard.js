@@ -1,12 +1,12 @@
 import React,{useState}from 'react'
-import list from './list';
+import MovieList from './MovieList';
 
-const Search = () => {
+const MovieCard = () => {
   const [filter ,setFilter]=useState('');
   const searchText=(event)=>{
     setFilter(event.target.value); 
   }
-  let dataSearch =list.cardData.filter(item=>{
+  let dataSearch =MovieList.cardData.filter(item=>{
     return Object.keys(item).some(key=>
       item[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
       )
@@ -55,4 +55,4 @@ const Search = () => {
   )
 }
 
-export default Search;
+export default MovieCard;
