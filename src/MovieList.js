@@ -7,41 +7,43 @@ import img4 from './Photo/img4.jpg'
 const MovieList = {
     cardData:[
 {
-    id:1,
+    id:Math.random(),
     img:img1,
     tittle:'Emily in paris',
     description:'Drama',
     postUrl:'',
     desc:'7.5',
-   
+   linkTrailer:'https://youtu.be/lptctjAT-Mk'
   
 }
 ,
 {
-    id:1,
+    id:Math.random(),
     img:img2,
     tittle:'Good Doctors',
     description:'Drama',
     postUrl:'',
     desc:'9.5',
-   
+   linkTrailer:'https://youtu.be/lnY9FWUTY84'
 }
 ,
 {
-    id:1,
+    id:Math.random(),
     img:img3,
     tittle:'FatherHood',
     description:'Drama',
     postUrl:'',
-    desc:'9.5'
+    desc:'9.5',
+    linkTrailer:'https://youtu.be/T3mwUEoZdrI'
 } 
 ,{
-    id:1,
+    id:Math.random(),
     img:img4,
     tittle:'Kate',
     description:'Action',
     postUrl:'',
-    desc:'8.5'
+    desc:'8.5',
+    linkTrailer:'https://youtu.be/MysGjRS9jFU'
 },
 
 ]

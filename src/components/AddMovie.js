@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 
 function AddMovie() {
@@ -68,10 +70,10 @@ function AddMovie() {
       </form>
       <div className='py-4 container'>
       <div className='row justify-content-center'>
-      <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4 "  style={{textAlign: "center",alignContent:'center',display:"flex"}}>
-        <div className="card p-0 overflow-hidden h-100 shadow " style={{textAlign: "center" ,alignContent:'center'}}>
+      <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4 "  style={{textAlign: "center",alignContent:'center',display:"flex",borderRadius:'8px'}}>
+        <div className="card p-0 overflow-hidden h-100 shadow " style={{textAlign: "center" ,alignContent:'center',borderRadius:'8px'}}>
           {movies.map((movie) => (
-            <div className="card-body" style={{alignItems: "center",alignContent:'center' }}>
+            <div className="card-body" style={{alignItems: "center",alignContent:'center' ,borderRadius:'8px'}}>
               <img
                 src={movie.image}
                 alt={movie.image}
@@ -98,42 +100,4 @@ function AddMovie() {
 
 export default AddMovie;
 
-/*import React from 'react'
 
-const AddMovie = () => {
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
- const [newmovie , setNewmovie]=useState({
-    img:'',
-    tittle:'',
-    description:'',
-    postUrl:'',
-    desc:'',
-  });
-const handleChange =(e)=>{
-    setNewmovie({
-    ...newmovie,[e.target.name]:e.target.value
-    })
-}
-const handleSubmit=()=>{
-    handleNew(newmovie)
-    setNewmovie({
-        img:'',
-        tittle:'',
-        description:'',
-        postUrl:'',
-        desc:'',
-    })
-
-}
-
-
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default AddMovie*/
