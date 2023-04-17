@@ -12,11 +12,12 @@ const MovieCard = () => {
       item[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
       )
   })
+  
   const {id}= useParams();
   return (
   
     <section className='py-4 container'>
-   <link to='/MovieDescription'></link>
+
 <div className='row justify-content-center'>
 <div className='col-12 mb-5'>
   <div className='mb-3 col-4 mx-auto'>
@@ -38,16 +39,18 @@ const MovieCard = () => {
   return (
     <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4" style={{borderRadius:'8px'}}>
       <div className="card p-0 overflow-hidden h-100 shadow"  style={{borderRadius:'8px'}}>
-       <Link to='MovieDescription'>
+   
        <img src={item.img} alt=" " className="card-img-top" width='300px' height='300px' />
-       </Link>
+       
         <div className="card-body" style={{borderRadius:'8px'}}>
           <h5 className="card-tittle">{item.tittle}</h5>
           <p className="card-number">{item.description}</p>
           <p className="card-number">{item.desc}</p>
-          <link to={'/MovieDescription/${desc._id}'}>
-          <button>view more</button> 
-        </link>
+         
+          <Link to={`/MovieDesc/${item._id}`} className='btn btn-primary'>
+          view more
+          </Link>
+       
         </div>
 
       </div>
